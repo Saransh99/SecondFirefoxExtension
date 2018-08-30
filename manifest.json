@@ -1,3 +1,26 @@
 {
-    
+    "manifest_version":2,
+    "name": "AnotherOne",
+    "version":"1.0",
+    "description":"some other extension for the firefox",
+    "homepage_url":"https://github.com/Saransh99/SecondFirefoxExtension",
+    "icons": {
+        "48":"icons/beasts-48.png"
+    },
+    "permissions":[
+        "activeTab"
+    ],
+
+    "browser_action":{
+        "default_icon":"icons/beasts-32.png",
+        "default_title":"AnotherOne",
+        "default_popup":"popup/choose_beast.html"
+    },
+
+    "web_accessible_resources":[
+        "beasts/frog.jpg",
+        "beasts/turtle.jpg",
+        "beasts/snake.jpg"
+    ]
+
 }
